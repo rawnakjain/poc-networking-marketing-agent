@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tmux -V)",
+      "Bash(python3 -c \"import subprocess; print\\('subprocess ok'\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(tmux list-sessions *)",
+      "Bash(tmux list-windows *)",
+      "Bash(tmux list-panes *)",
+      "Bash(tmux attach *)",
+      "Bash(tmux capture-pane *)",
+      "Bash(tmux attach-session *)",
+      "Bash(tmux show-buffer *)",
+      "Bash(tty)",
+      "Bash(python3 serve_simulation.py)",
+      "Bash(curl -s http://localhost:8080/simulation.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/simulation.html)",
+      "Bash(curl -s http://localhost:8080/)",
+      "Bash(pkill -f serve_simulation.py)",
+      "Bash(python3 -)",
+      "Bash(node cdp_test.mjs http://localhost:8080/simulation.html)",
+      "Bash(node cdp_reset.mjs)"
+    ]
+  }
+}
